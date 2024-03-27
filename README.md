@@ -1,0 +1,2 @@
+# ATM-machine
+PROJECT BASED ON TYPESCRIPT &amp; NODEJS.
