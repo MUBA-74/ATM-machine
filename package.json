@@ -1,6 +1,6 @@
 {
   "name": "umar-cli-atm-machine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PROJECT BASED ON TYPESCRIPT &amp; NODEJS.",
   "main": "index.js",
   "type": "module",
