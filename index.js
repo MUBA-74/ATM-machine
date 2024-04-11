@@ -15,14 +15,14 @@ if (pinAnswer.pin === myPin) {
     let operationAns = await inquirer.prompt([{
             name: "operation",
             type: "list",
-            message: "Please Select Your Operation:",
+            message: chalk.greenBright("Please Select Your Operation:"),
             choices: ["WithDraw", "Check Balance"],
         }]);
     if (operationAns.operation === "WithDraw") {
         let withdrawAns = await inquirer.prompt([{
                 name: "WithDrawMethod",
                 type: "list",
-                message: "Please Select a WithDraw Method:",
+                message: chalk.greenBright("Please Select a WithDraw Method:"),
                 choices: ["FASTCASH", "Enter Amount"],
             }]);
         if (withdrawAns.WithDrawMethod === "FASTCASH") {
@@ -46,7 +46,7 @@ if (pinAnswer.pin === myPin) {
             let amountAns = await inquirer.prompt([{
                     name: "amount",
                     type: "number",
-                    message: "Enter Your Amount:",
+                    message: chalk.blue("Enter Your Amount:"),
                 }]);
             if (amountAns.amount > myBalance) {
                 console.log(chalk.red("INSUFFICIENT BALANCE"));

@@ -26,7 +26,7 @@ if (pinAnswer.pin===myPin) {
 
            name:"operation",
            type:"list",
-           message:"Please Select Your Operation:",
+           message: chalk.greenBright("Please Select Your Operation:"),
            choices:["WithDraw", "Check Balance"],
 
 
@@ -38,7 +38,7 @@ if (pinAnswer.pin===myPin) {
 
             name:"WithDrawMethod",
             type:"list",
-            message:"Please Select a WithDraw Method:",
+            message: chalk.greenBright("Please Select a WithDraw Method:"),
             choices:["FASTCASH", "Enter Amount"],
 
         }]);
@@ -72,7 +72,7 @@ if (pinAnswer.pin===myPin) {
 
                 name:"amount",
                 type:"number",
-                message:"Enter Your Amount:",
+                message:chalk.blue("Enter Your Amount:"),
             }]);
              
             
